@@ -3,7 +3,7 @@ public class CustomLinkedList<E> implements CustomList<E> {
     private int size;
     private Node head;
 
-    public CustomLinkedList(){              //tworzymy pierwszy element listy HEAD
+    public CustomLinkedList() {              //tworzymy pierwszy element listy HEAD
         head = new Node(null);
     }
 
@@ -21,6 +21,15 @@ public class CustomLinkedList<E> implements CustomList<E> {
         head.next = copy;
         System.out.println("Wartosc next: " + head.next);
         size++;
+
+    }
+
+    public void printList() {                   //iterowanie listy
+        Node tmp = head;
+        while (tmp != null) {
+            System.out.println(tmp.data);
+            tmp = tmp.next;
+        }
 
     }
 

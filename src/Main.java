@@ -10,13 +10,24 @@ public class Main {
 
         CustomList<String> customList = new CustomLinkedList<>();       //utworzenie wlasnej listy
 
-        customList.add("Jeden");
+        customList.add("One");
         System.out.println();
-        customList.add("Dwa");
+        customList.add("Two");
         System.out.println();
-        customList.add("Trzy");
+        customList.add("Three");
         System.out.println();
-        customList.add("Cztery");
+        customList.add("Four");
+        System.out.println();
+        customList.add("Five");
+        System.out.println();
+        customList.add("Six");
+        System.out.println();
+        customList.add("Seven");
+        System.out.println();
+        customList.add("Eight");
+
+        customList.printList();
+
 
         List<String> list = new LinkedList<>();     //utworzenie listy
 
