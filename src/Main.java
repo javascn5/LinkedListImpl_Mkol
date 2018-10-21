@@ -35,7 +35,7 @@ public class Main {
         list.add("John");
         list.add("Rules");
 
-        for(String l: list){
+        for (String l : list) {
             System.out.println(l);
         }
     }
