@@ -31,6 +31,9 @@ public class Main {
         System.out.println("\nWyszukana wartosc:");
         customList.find(7);
 
+        customList.addTail("inny");
+        customList.printList();
+
 
         List<String> list = new LinkedList<>();     //utworzenie listy
 
@@ -38,8 +41,8 @@ public class Main {
         list.add("John");
         list.add("Rules");
 
-        for (String l : list) {
-            System.out.println(l);
-        }
+//        for (String l : list) {
+//            System.out.println(l);
+//        }
     }
 }

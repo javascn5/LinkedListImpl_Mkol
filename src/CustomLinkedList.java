@@ -34,12 +34,17 @@ public class CustomLinkedList<E> implements CustomList<E> {
     }
 
     @Override
-    public void addTail() {
+    public void addTail(E e) {
+        Node tmp = head;
+        while (tmp.next != null) {
+            tmp = tmp.next;
+        }
+        tmp.next = new Node(e);
 
     }
 
     @Override
-    public void find(int index) {
+    public void find(int index) {               //wyszukanie elementu
 
         Node tmp = head;
         for (int i = 0; i < index; i++) {

@@ -8,8 +8,10 @@ public interface CustomList<E> {
 
     public void printList();
 
-    public void addTail();
+    public void addTail(E e);
 
     public void find(int index);
+
+    public void remove();       //zaimplementowac
 
 }
