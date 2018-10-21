@@ -8,4 +8,8 @@ public interface CustomList<E> {
 
     public void printList();
 
+    public void addTail();
+
+    public void find(int index);
+
 }

@@ -28,6 +28,9 @@ public class Main {
 
         customList.printList();
 
+        System.out.println("\nWyszukana wartosc:");
+        customList.find(7);
+
 
         List<String> list = new LinkedList<>();     //utworzenie listy
 
