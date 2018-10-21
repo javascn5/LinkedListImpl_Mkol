@@ -8,6 +8,12 @@ public class Main {
         //ArrayList - implemetacja tablicowa
         //LinkedList - implementacja
 
+        CustomList<String> customList = new CustomLinkedList<>();       //utworzenie wlasnej listy
+
+        customList.add("Jeden");
+        customList.add("Dwa");
+        customList.add("Trzy");
+
         List<String> list = new LinkedList<>();     //utworzenie listy
 
         list.add("Cold");

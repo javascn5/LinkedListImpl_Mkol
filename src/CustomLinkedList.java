@@ -1,5 +1,12 @@
 public class CustomLinkedList<E> implements CustomList<E> {
 
+    private int size;
+    private Node head;
+
+    public CustomLinkedList(){              //tworzymy pierwszy element listy HEAD
+        head = new Node(null);
+    }
+
     @Override
     public E get(int index) {
         return null;
@@ -7,6 +14,13 @@ public class CustomLinkedList<E> implements CustomList<E> {
 
     @Override
     public void add(E e) {
+        Node copy = head;
+        System.out.println("Wartosc copy: " + copy);
+        head = new Node(e);
+        System.out.println("Wartosc head: " + head);
+        head.next = copy;
+        System.out.println("Wartosc next: " + head.next);
+        size++;
 
     }
 
@@ -25,6 +39,14 @@ public class CustomLinkedList<E> implements CustomList<E> {
 
         public Object getData() {
             return this.data;
+        }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "data=" + data +
+                    ", next=" + next +
+                    '}';
         }
     }
 }
